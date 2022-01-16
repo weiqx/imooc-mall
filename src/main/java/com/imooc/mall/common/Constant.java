@@ -20,7 +20,7 @@ public class Constant {
 
     public static String FILE_UPLOAD_DIR;  //解耦 只需要在配置文件填写就可  staic null pointer ex
 
-    @Value("${file,upload.dir}")
+    @Value("${file.upload.dir}")
     public void setFileUploadDir(String fileUploadDir) {
         FILE_UPLOAD_DIR = fileUploadDir;
     }

@@ -3,6 +3,8 @@ package com.imooc.mall.model.dao;
 import com.imooc.mall.model.pojo.Order;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface OrderMapper {
     int deleteByPrimaryKey(Integer id);
@@ -18,4 +20,8 @@ public interface OrderMapper {
     int updateByPrimaryKey(Order record);
 
     Order selectByOrderNo(String orderNo);
+
+    List<Order> selectForCustomer(Integer userId);
+
+    List<Order> selectAllForAdmin();
 }

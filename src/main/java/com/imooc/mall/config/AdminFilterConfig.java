@@ -16,7 +16,7 @@ public class AdminFilterConfig {
     }
 
     @Bean(name = "adminFilterConf")
-    public FilterRegistrationBean adminFiterConfig() {
+    public FilterRegistrationBean adminFilterConfig() {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(adminFilter());
         filterRegistrationBean.addUrlPatterns("/admin/category/*");

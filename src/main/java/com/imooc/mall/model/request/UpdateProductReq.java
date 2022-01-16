@@ -91,4 +91,17 @@ public class UpdateProductReq {
         this.status = status;
     }
 
+    @Override
+    public String toString() {
+        return "UpdateProductReq{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", detail='" + detail + '\'' +
+                ", categoryId=" + categoryId +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", status=" + status +
+                '}';
+    }
 }

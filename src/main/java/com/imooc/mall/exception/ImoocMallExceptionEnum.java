@@ -27,6 +27,7 @@ public enum ImoocMallExceptionEnum {
     NO_ENUM(10019, "未找到对应的枚举类"),
     NO_ORDER(10020, "订单不存在"),
     NOT_YOUR_ORDER(10021, "订单不属于你"),
+    WRONG_ORDER_STATUS(10022, "订单状态不符"),
 
     SYSTEM_ERROR(20000, "系统异常");
 
