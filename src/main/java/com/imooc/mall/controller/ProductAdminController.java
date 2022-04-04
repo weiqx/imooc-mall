@@ -32,6 +32,7 @@ public class ProductAdminController {
     @Autowired
     ProductService productService;
 
+    // 添加商品
     @PostMapping("admin/product/add")
     public ApiRestResponse addProduct(@Valid @RequestBody AddProductReq addProductReq) {
         productService.add(addProductReq);
@@ -107,6 +108,10 @@ public class ProductAdminController {
         return ApiRestResponse.success(pageInfo);
     }
 
+    public static void main(String[] args) {
+
+
+    }
 }
 
 

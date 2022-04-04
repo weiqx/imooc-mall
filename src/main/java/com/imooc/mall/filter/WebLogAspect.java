@@ -49,5 +49,4 @@ public class WebLogAspect {
         log.info("RESPONSE : " + new ObjectMapper().writeValueAsString(res));
                                   // fastjson 提供的对象 --> json 的转换工具
     }
-
 }

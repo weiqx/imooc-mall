@@ -100,7 +100,7 @@ public class UserController {
         User user = userService.login(userName, password);
         // 身份校验
         if (userService.checkAdminRole(user)) {
-            //是管理员
+            // 是管理员
             // 保存用户信息时不保存密码
             user.setPassword(null);
             session.setAttribute(Constant.IMOOC_MALL_USER, user);  // 用户对象放到session
@@ -108,10 +108,5 @@ public class UserController {
         } else {
             return ApiRestResponse.error(ImoocMallExceptionEnum.NEED_ADMIN);
         }
-
-
     }
-
-
-
 }
